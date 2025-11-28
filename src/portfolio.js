@@ -26,7 +26,7 @@ const greeting = {
     "A passionate AI × Unity developer 🚀 having an experience of building real-time interactive XR and multimodal emotion-aware systems."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1IcDv5JLYmaNq0FkqksMId5ZO4-2DKzI5/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1IcDv5JLYmaNq0FkqksMId5ZO4-2DKzI5/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -229,37 +229,37 @@ const bigProjects = {
       projectName: "Real-Time Emotion-Aware VTuber System",
       projectDesc:
         "Unity + Live2D + ONNX multimodal emotion models integrated into a real-time character performance system for Graduation Exhibition.",
-      footerLink: []
+      footerLink: ["https://github.com/suminpark818/Multimodal-Emotion-Recognition-AI"]
     },
     {
       projectName: "AR Interior Design App (iOS)",
       projectDesc:
         "Unity AR Foundation + ARKit/ARCore system for realistic furniture placement, plane detection, anchoring, and manipulation.",
-      footerLink: []
+      footerLink: ["https://github.com/suminpark818/AR-Interior-Design-App"]
     },
     {
       projectName: "MR Live – Mixed Reality Concert System",
       projectDesc:
         "A Mixed Reality concert pipeline allowing real-time virtual performances in interactive 3D stage environments.",
-      footerLink: []
+      footerLink: ["https://medium.com/@suminpark818/building-a-real-time-emotion-aware-mr-prototype-using-unity-and-ai-b26ee2b20afd"]
     },
     {
       projectName: "Real-Time Speaker-Differentiated Captioning System",
       projectDesc:
         "Integrated Whisper + pyannote.audio with FastAPI WebSocket streaming to provide live speaker-labeled captions.",
-      footerLink: []
+      footerLink: ["https://github.com/suminpark818/Real-time-Speech-to-Text-Speaker-Diarization-Prototype"]
     },
     {
       projectName: "Conversational AI Game Prototype",
       projectDesc:
         "Unity multiplayer prototype that integrates conversational AI for real-time interactive dialogue and user engagement.",
-      footerLink: []
+      footerLink: ["https://suminpark818.medium.com/creating-a-local-conversational-npc-in-unity-with-llama-3-ollama-a453e94609d2"]
     },
     {
-      projectName: "Predictive AI Prototype Design",
+      projectName: "Real-Time Hand Gesture Controller Using Mediapipe & Keras",
       projectDesc:
-        "Built ML prototypes using Linear Regression, MLP, and Ensemble Methods for creative predictive content generation.",
-      footerLink: []
+        "A lightweight machine-learning powered interface for gesture recognition in the browser.",
+      footerLink: ["https://suminpark818.medium.com/real-time-hand-gesture-controller-using-mediapipe-keras-21760dd2d12b"]
     },
     {
       projectName: "VR Rhythm Game Mentoring Project",
