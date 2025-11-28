@@ -23,10 +23,10 @@ const greeting = {
   username: "Sumin Park",
   title: "Hi all, I'm Sumin Park",
   subTitle: emoji(
-    "A passionate AI × Unity developer 🚀 having an experience of building real-time interactive XR, VTuber, and multimodal emotion-aware systems."
+    "A passionate AI × Unity developer 🚀 having an experience of building real-time interactive XR and multimodal emotion-aware systems."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1WUryvfadyZvrzCmHjyFcdLT-x7N4rkWk/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1IcDv5JLYmaNq0FkqksMId5ZO4-2DKzI5/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/suminpark818",
-  linkedin: "https://www.linkedin.com/in/sumin-park-a5961438a",
+  linkedin: "https://www.linkedin.com/in/sumin-park-mina",
   gmail: "suminpark818@gmail.com",
   Medium: "https://medium.com/@suminpark818",
   // facebook: "https://www.facebook.com/saad.pasta7",
@@ -49,13 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "A CREATIVE DEVELOPER BUILDING INTERACTIVE AI & XR EXPERIENCES",
+  subTitle:
+    "AI + XR ENGINEER BUILDING REAL-TIME INTERACTIVE EXPERIENCES IN UNITY & MULTIMODAL AI",
   skills: [
-    emoji("⚡ Develop real-time emotion-aware VTuber and XR interaction systems using Unity and Live2D"),
-    emoji("⚡ Integrate multimodal AI models (facial + audio emotion recognition) with Flask/FastAPI servers"),
-    emoji("⚡ Design and implement user-centered UI/UX and MR live systems for virtual performances"),
-    emoji("⚡ Build AI prototypes with Python, PyTorch, TensorFlow, and deploy them with ONNX"),
-    emoji("⚡ Develop interactive AR/VR applications using Unity, AR Foundation, and OpenCV tracking")
+    emoji("⚡ Build real-time emotion-aware VTuber systems using Unity, Live2D Cubism, OpenCV, and ONNX models"),
+    emoji("⚡ Develop multimodal AI (facial + audio + motion) pipelines with PyTorch, TensorFlow, FastAPI, and WebSocket"),
+    emoji("⚡ Create AR/VR/MR applications using Unity, AR Foundation, ARKit/ARCore, and VRM avatars"),
+    emoji("⚡ Design AI-driven UX systems for MR concerts, interactive storytelling, and spatial user experiences"),
+    emoji("⚡ Prototype and deploy ML models (vision/audio/NLP) with ONNX, TorchAudio, Flask/FastAPI servers")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -70,6 +71,16 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "C#",
       fontAwesomeClassname: "devicon-csharp-plain"
     },
+    { 
+      skillName: "C++", fontAwesomeClassname: "devicon-cplusplus-plain" 
+    },
+    {
+      skillName: "Unity",
+      fontAwesomeClassname: "devicon-unity-original"
+    },
+    { 
+      skillName: "PyTorch", fontAwesomeClassname: "devicon-pytorch-original" 
+    },
     {
       skillName: "TensorFlow",
       fontAwesomeClassname: "devicon-tensorflow-original"
@@ -82,14 +93,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Pandas",
       fontAwesomeClassname: "devicon-pandas-original"
     },
-    {
-      skillName: "Jupyter",
-      fontAwesomeClassname: "devicon-jupyter-plain"
-    },
-    {
-      skillName: "Unity",
-      fontAwesomeClassname: "devicon-unity-original"
-    },
+
     {
       skillName: "MySQL",
       fontAwesomeClassname: "devicon-mysql-plain"
@@ -102,13 +106,8 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "FastAPI",
       fontAwesomeClassname: "devicon-fastapi-plain"
     },
-    {
-      skillName: "GCP",
-      fontAwesomeClassname: "devicon-googlecloud-plain"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "devicon-docker-plain"
+    { 
+      skillName: "Flask", fontAwesomeClassname: "devicon-flask-original" 
     },
     {
       skillName: "Git",
@@ -128,23 +127,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "NIT Rourkela",
-      logo: require("./assets/images/NIT_Rourkela_Colour_Logo.svg.png"),
+      schoolName: "Duksung Women’s University",
+      logo: require("./assets/images/duksung.png"),
       subHeader: "Bachelor's in Technology",
-      duration: "March 2020 - May 2024",
-      desc: "Electronics and Intrumentation Engineering",
-      descBullets: [
-        "CGPA: 8.19/10",
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Mother's Public School",
-      logo: require("./assets/images/Mother-Public-School-Bapuji-Nagar-Bhubaneswar.png"),
-      subHeader: "CBSE",
-      duration: "March 2018 - March 2020",
-      desc: "11th and 12th grade",
-      descBullets: ["12th Percentage: 95.4%"]
+      duration: "March 2022 - Feb 2026",
+      desc: "IT Media Engineering",
+//      descBullets: [
+//        "CGPA: 8.19/10",
+//        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+//      ]
     }
   ]
 };
@@ -155,15 +146,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Data Science", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Unity / XR Development",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Machine Learning",
-      progressPercentage: "70%"
+      Stack: "AI / Machine Learning",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Python Programming",
+      Stack: "Real-Time Interactive Systems",
       progressPercentage: "80%"
     }
   ],
@@ -176,30 +167,48 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "ML Engineer intern",
-      company: "SamagraX",
-      companylogo: require("./assets/images/samagra.jpg"),
-      date: "July 2023 – Present",
-      desc: "Responsible to actively contribute to the open-source community, specifically in the field of Text2sql. This involved collaborating with large language models and working extensively with expansive datasets like the spider and wikisql dataset. My goal was to develop an application capable of receiving a natural language query and a database, and generating the appropriate SQL query to produce accurate outputs."
+      role: "3D Animation Freelance Artist",
+      company: "Korea University Competition",
+        //fontAwesomeClassname: "blender-git-plain"
+      companylogo: require("./assets/images/koreaUni.png"), // 로고 교체 필요 
+      date: "Dec 2024 – Jan 2025",
+      desc:
+        "Created 3D visualizations of electrical engineering concepts in Blender. Produced and edited presentation videos using After Effects for clarity and impact."
     },
     {
-      role: "Data pipeline engineer intern",
-      company: "Stryze the german group",
-      companylogo: require("./assets/images/stryze.jpg"),
-      date: "October 2022 – January 2023",
-      desc: "Responsible for making automated APIs that would collect data from various sources like eBay, amazon, local websites etc. Also responsible for testing and deployment of the created APIs and Data transformation of the obtained data using DBT.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    {
-      role: "ML Fellow",
-      company: "Fellowship.ai",
-      companylogo: require("./assets/images/download.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Responsible for making a CLIP model which would take in information about the product or an image of the product, and provide information on all the similar products by competitors available on the market. Streamlit was used to develop the front end and Scrapy was used to scrape competitors’ data."
+      role: "Metaverse Research Assistant",
+      company: "Dobong District Office",
+        //fontAwesomeClassname: "zep-git-plain"
+      companylogo: require("./assets/images/dobong.png"), // 로고 교체 필요
+      date: "Sep 2023 – Dec 2023",
+      desc:
+        "Co-developed a Zep/Zepeto metaverse reconstruction of Dobong Old Trail. Conducted local research and built interactive environments showcased in a public exhibition."
     }
+//    {
+//      role: "ML Engineer intern",
+//      company: "SamagraX",
+//      companylogo: require("./assets/images/samagra.jpg"),
+//      date: "July 2023 – Present",
+//      desc: "Responsible to actively contribute to the open-source community, specifically in the field of Text2sql. This involved collaborating with large language models and working extensively with expansive datasets like the spider and wikisql dataset. My goal was to develop an application capable of receiving a natural language query and a database, and generating the appropriate SQL query to produce accurate outputs."
+//    },
+//    {
+//      role: "Data pipeline engineer intern",
+//      company: "Stryze the german group",
+//      companylogo: require("./assets/images/stryze.jpg"),
+//      date: "October 2022 – January 2023",
+//      desc: "Responsible for making automated APIs that would collect data from various sources like eBay, amazon, local websites etc. Also responsible for testing and deployment of the created APIs and Data transformation of the obtained data using DBT.",
+//      // descBullets: [
+//      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+//      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+//      // ]
+//    },
+//    {
+//      role: "ML Fellow",
+//      company: "Fellowship.ai",
+//      companylogo: require("./assets/images/download.png"),
+//      date: "Jan 2015 – Sep 2015",
+//      desc: "Responsible for making a CLIP model which would take in information about the product or an image of the product, and provide information on all the similar products by competitors available on the market. Streamlit was used to develop the front end and Scrapy was used to scrape competitors’ data."
+//    }
   ]
 };
 
@@ -212,112 +221,201 @@ const openSource = {
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Major Projects",
+  subtitle: "AI × XR SYSTEMS I BUILT OR LED",
   projects: [
     {
-      image: require("./assets/images/Logo.png"),
-      projectName: "VastuGuru",
-      projectDesc: "Generate room ideas that adhere to the principles of vast",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://www.visualguru.xyz/"
-        }
-        //  you can add extra buttons here.
-      ]
+      projectName: "Real-Time Emotion-Aware VTuber System",
+      projectDesc:
+        "Unity + Live2D + ONNX multimodal emotion models integrated into a real-time character performance system for Graduation Exhibition.",
+      footerLink: []
     },
-    // {
-    //   image: require("./assets/images/nextuLogo.webp"),
-    //   projectName: "Nextu",
-    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "http://nextu.se/"
-    //     }
-    //   ]
-    // }
+    {
+      projectName: "AR Interior Design App (iOS)",
+      projectDesc:
+        "Unity AR Foundation + ARKit/ARCore system for realistic furniture placement, plane detection, anchoring, and manipulation.",
+      footerLink: []
+    },
+    {
+      projectName: "MR Live – Mixed Reality Concert System",
+      projectDesc:
+        "A Mixed Reality concert pipeline allowing real-time virtual performances in interactive 3D stage environments.",
+      footerLink: []
+    },
+    {
+      projectName: "Real-Time Speaker-Differentiated Captioning System",
+      projectDesc:
+        "Integrated Whisper + pyannote.audio with FastAPI WebSocket streaming to provide live speaker-labeled captions.",
+      footerLink: []
+    },
+    {
+      projectName: "Conversational AI Game Prototype",
+      projectDesc:
+        "Unity multiplayer prototype that integrates conversational AI for real-time interactive dialogue and user engagement.",
+      footerLink: []
+    },
+    {
+      projectName: "Predictive AI Prototype Design",
+      projectDesc:
+        "Built ML prototypes using Linear Regression, MLP, and Ensemble Methods for creative predictive content generation.",
+      footerLink: []
+    },
+    {
+      projectName: "VR Rhythm Game Mentoring Project",
+      projectDesc:
+        "Led mentoring program and supervised Unity VR game development, supporting technical structure and monthly challenges.",
+      footerLink: []
+    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
+//const bigProjects = {
+//  title: "Projects",
+//  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+//  projects: [
+//    {
+//      image: require("./assets/images/Logo.png"),
+//      projectName: "VastuGuru",
+//      projectDesc: "Generate room ideas that adhere to the principles of vast",
+//      footerLink: [
+//        {
+//          name: "Visit Website",
+//          url: "https://www.visualguru.xyz/"
+//        }
+//        //  you can add extra buttons here.
+//      ]
+//    },
+//    // {
+//    //   image: require("./assets/images/nextuLogo.webp"),
+//    //   projectName: "Nextu",
+//    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+//    //   footerLink: [
+//    //     {
+//    //       name: "Visit Website",
+//    //       url: "http://nextu.se/"
+//    //     }
+//    //   ]
+//    // }
+//  ],
+//  display: true // Set false to hide this section, defaults to true
+//};
 
 // Achievement Section
 // Include certificates, talks etc
 
+//const achievementSection = {
+//  title: emoji("Achievements And Certifications 🏆 "),
+//  subtitle:
+//    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+//
+//  achievementsCards: [
+//    {
+//      title: "Dr.Reddy's Laboratories National Hackathon winner",
+//      subtitle:
+//        "Won the nation-wide hackathon organized by Dr.Reddy's Laboratories where more than 1500+ teams participated.",
+//      image: require("./assets/images/RDY.png"),
+//      imageAlt: "Dr.Reddy's Logo",
+//      footerLink: [
+//        {
+//          name: "Post",
+//          url: "https://www.linkedin.com/posts/dr--reddys-laboratories_digitalhealthhackathon-goodhealthcantwait-activity-7019909087953903616-QkQQ/?originalSubdomain=np"
+//        },
+//        // {
+//        //   name: "Award Letter",
+//        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+//        // },
+//        // {
+//        //   name: "Google Code-in Blog",
+//        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+//        // }
+//      ]
+//    },
+//    {
+//      title: "Amazon ML Summer School",
+//      subtitle:
+//        "Industry practices and Complex models were learned",
+//      image: require("./assets/images/amazon.jpg"),
+//      imageAlt: "Amazon Logo",
+//      footerLink: [
+//        {
+//          name: "Certification",
+//          url: "https://drive.google.com/file/d/1Un84z9qRrcGaTAHpFlvM7AZ_cVLj5ygC/view"
+//        }
+//      ]
+//    },
+//
+//    {
+//      title: "Deep Learning specialization",
+//      subtitle: "Completed the DL specialization course provided by Deeplearning.ai",
+//      image: require("./assets/images/deeplearning.png"),
+//      imageAlt: "Deeplearning.ai logo",
+//      footerLink: [
+//        {name: "Certification", url: "https://www.credly.com/badges/c142beef-03ef-4da6-a1c0-948d61dd3786?source=linked_in_profile"},
+//        // {
+//        //   name: "Final Project",
+//        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+//        // }
+//      ]
+//    }
+//  ],
+//  display: true // Set false to hide this section, defaults to true
+//};
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements & Awards 🏆"),
+  subtitle: "Highlighted recognitions from competitions and academic projects.",
 
   achievementsCards: [
     {
-      title: "Dr.Reddy's Laboratories National Hackathon winner",
-      subtitle:
-        "Won the nation-wide hackathon organized by Dr.Reddy's Laboratories where more than 1500+ teams participated.",
-      image: require("./assets/images/RDY.png"),
-      imageAlt: "Dr.Reddy's Logo",
-      footerLink: [
-        {
-          name: "Post",
-          url: "https://www.linkedin.com/posts/dr--reddys-laboratories_digitalhealthhackathon-goodhealthcantwait-activity-7019909087953903616-QkQQ/?originalSubdomain=np"
-        },
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
+      title: "Challenge! K-Startup Student League Finalist",
+      subtitle: "Selected among U300+ teams for the final round.",
+      image: require("./assets/images/award-symbol.png"),
+      imageAlt: "Award",
+        footerLink: []
     },
     {
-      title: "Amazon ML Summer School",
-      subtitle:
-        "Industry practices and Complex models were learned",
-      image: require("./assets/images/amazon.jpg"),
-      imageAlt: "Amazon Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/1Un84z9qRrcGaTAHpFlvM7AZ_cVLj5ygC/view"
-        }
-      ]
+      title: "University Data Innovation Contest Finalist",
+      subtitle: "Recognized for innovative data-driven prototype design.",
+      image: require("./assets/images/award-symbol.png"),
+      imageAlt: "Award",
+        footerLink: []
     },
-
     {
-      title: "Deep Learning specialization",
-      subtitle: "Completed the DL specialization course provided by Deeplearning.ai",
-      image: require("./assets/images/deeplearning.png"),
-      imageAlt: "Deeplearning.ai logo",
-      footerLink: [
-        {name: "Certification", url: "https://www.credly.com/badges/c142beef-03ef-4da6-a1c0-948d61dd3786?source=linked_in_profile"},
-        // {
-        //   name: "Final Project",
-        //   url: "https://pakistan-olx-1.firebaseapp.com/"
-        // }
-      ]
+      title: "University Hackathon Finalist",
+      subtitle: "Awarded for creative technical implementation in a team project.",
+      image: require("./assets/images/award-symbol.png"),
+      imageAlt: "Award",
+        footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
 // Blogs Section
 
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "I write about AI, XR, and real-time interaction systems.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://medium.com/@goyalpramod1729/how-i-made-my-first-contribution-to-c4gt-as-someone-who-has-never-worked-in-open-source-6b6c7b71da3b",
-      title: "How I made my first contribution to C4GT as someone who has never worked in open-source",
+      url: "https://medium.com/@suminpark818/how-mr-technology-redefines-the-vtuber-experience-5b82bd38e1cc",
+      title: "How MR Technology Redefines the VTuber Experience",
       description:
-        "Learn about steps to contribute to open source for the first time."
+        "Exploring how immersive mixed reality performances are changing the landscape of virtual entertainment."
+    },
+    {
+      url: "https://medium.com/@suminpark818/building-a-real-time-emotion-aware-mr-prototype-using-unity-and-ai-b26ee2b20afd",
+      title: "Building a Real-Time Emotion-Aware MR Prototype Using Unity and AI",
+      description:
+        "Bridging research and implementation through real-time multimodal interaction."
+    },    
+    {
+      url: "https://medium.com/@suminpark818/real-time-hand-gesture-controller-using-mediapipe-keras-21760dd2d12b",
+      title: "Real-Time Hand Gesture Controller Using Mediapipe & Keras",
+      description:
+        "A lightweight machine-learning powered interface for gesture recognition in the browser."
     },
     // {
     //   url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
@@ -365,8 +463,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-9853618169",
-  email_address: "goyalpramod1729@gmail.com"
+  number: "+82-1027238239",
+  email_address: "suminpark818@gmail.com"
 };
 
 // Twitter Section
