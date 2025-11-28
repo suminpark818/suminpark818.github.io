@@ -229,37 +229,52 @@ const bigProjects = {
       projectName: "Real-Time Emotion-Aware VTuber System",
       projectDesc:
         "Unity + Live2D + ONNX multimodal emotion models integrated into a real-time character performance system for Graduation Exhibition.",
-      footerLink: ["https://github.com/suminpark818/Multimodal-Emotion-Recognition-AI"]
+      footerLink: [
+                  {
+          name: "Visit Website",
+          url: "https://github.com/suminpark818/Multimodal-Emotion-Recognition-AI"
+       }]
     },
     {
       projectName: "AR Interior Design App (iOS)",
       projectDesc:
         "Unity AR Foundation + ARKit/ARCore system for realistic furniture placement, plane detection, anchoring, and manipulation.",
-      footerLink: ["https://github.com/suminpark818/AR-Interior-Design-App"]
+              footerLink: [{name: "Visit Website",
+          url: "https://github.com/suminpark818/AR-Interior-Design-App"
+       }]
+
     },
     {
       projectName: "MR Live – Mixed Reality Concert System",
       projectDesc:
-        "A Mixed Reality concert pipeline allowing real-time virtual performances in interactive 3D stage environments.",
-      footerLink: ["https://medium.com/@suminpark818/building-a-real-time-emotion-aware-mr-prototype-using-unity-and-ai-b26ee2b20afd"]
+        "A Mixed Reality concert pipeline allowing real-time virtual performances in interactive 3D stage environments.",              footerLink: [{name: "Visit Website",
+          url: "https://medium.com/@suminpark818/building-a-real-time-emotion-aware-mr-prototype-using-unity-and-ai-b26ee2b20afd"
+       }]
     },
     {
       projectName: "Real-Time Speaker-Differentiated Captioning System",
       projectDesc:
         "Integrated Whisper + pyannote.audio with FastAPI WebSocket streaming to provide live speaker-labeled captions.",
-      footerLink: ["https://github.com/suminpark818/Real-time-Speech-to-Text-Speaker-Diarization-Prototype"]
+       footerLink: [{name: "Visit Website",
+          url: "https://github.com/suminpark818/Real-time-Speech-to-Text-Speaker-Diarization-Prototype"
+       }]
     },
     {
       projectName: "Conversational AI Game Prototype",
       projectDesc:
-        "Unity multiplayer prototype that integrates conversational AI for real-time interactive dialogue and user engagement.",
-      footerLink: ["https://suminpark818.medium.com/creating-a-local-conversational-npc-in-unity-with-llama-3-ollama-a453e94609d2"]
+        "Unity multiplayer prototype that integrates conversational AI for real-time interactive dialogue and user engagement.",       footerLink: [{name: "Visit Website",
+          url: "https://suminpark818.medium.com/creating-a-local-conversational-npc-in-unity-with-llama-3-ollama-a453e94609d2"
+       }]
+ 
     },
     {
       projectName: "Real-Time Hand Gesture Controller Using Mediapipe & Keras",
       projectDesc:
         "A lightweight machine-learning powered interface for gesture recognition in the browser.",
-      footerLink: ["https://suminpark818.medium.com/real-time-hand-gesture-controller-using-mediapipe-keras-21760dd2d12b"]
+        footerLink: [{name: "Visit Website",
+          url: "https://suminpark818.medium.com/real-time-hand-gesture-controller-using-mediapipe-keras-21760dd2d12b"
+       }]
+
     },
     {
       projectName: "VR Rhythm Game Mentoring Project",
