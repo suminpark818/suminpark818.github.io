@@ -140,24 +140,7 @@ const educationInfo = {
   ]
 };
 
-// Certifications Section
-const certifications = {
-  display: true,
-  list: [
-    {
-      title: "GTQ Photoshop Level 1",
-      issuer: "KPC (Korea Productivity Center)",
-      date: "Issued: 2024",
-      // certificateURL: "", // 있다면 링크 추가 가능
-    },
-    {
-      title: "GTQ InDesign Level 1",
-      issuer: "KPC (Korea Productivity Center)",
-      date: "Issued: 2024",
-      // certificateURL: "",
-    },
-  ],
-};
+
 
 // Your top 3 proficient stacks/tech experience
 
@@ -421,6 +404,20 @@ const achievementSection = {
       image: require("./assets/images/award-symbol.png"),
       imageAlt: "Award",
         footerLink: []
+    },    
+      {
+      title: "GTQ Photoshop Level 1",
+      subtitle: "National Graphic Technology Qualification",
+      image: require("./assets/images/award-symbol.png"),
+      imageAlt: "GTQ Photoshop Lv1",
+      footerLink: []
+    },
+    {
+      title: "GTQ InDesign Level 1",
+      subtitle: "National Graphic Technology Qualification",
+      image: require("./assets/images/award-symbol.png"),
+      imageAlt: "GTQ InDesign Lv1",
+      footerLink: []
     }
   ],
   display: true
@@ -517,7 +514,6 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  certifications,
   techStack,
   workExperiences,
   openSource,
