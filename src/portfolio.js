@@ -23,7 +23,7 @@ const greeting = {
   username: "Sumin Park",
   title: "Hi all, I'm Sumin Park",
   subTitle: emoji(
-    "A passionate AI × Unity developer 🚀 having an experience of building real-time interactive XR and multimodal emotion-aware systems."
+    "A passionate AI × Unity developer 🚀 delivering real-time XR experiences powered by multimodal emotion-aware AI."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1IcDv5JLYmaNq0FkqksMId5ZO4-2DKzI5/view?usp=share_link", // Set to empty to hide the button
@@ -138,6 +138,25 @@ const educationInfo = {
 //      ]
     }
   ]
+};
+
+// Certifications Section
+const certifications = {
+  display: true,
+  list: [
+    {
+      title: "GTQ Photoshop Level 1",
+      issuer: "KPC (Korea Productivity Center)",
+      date: "Issued: 2024",
+      // certificateURL: "", // 있다면 링크 추가 가능
+    },
+    {
+      title: "GTQ InDesign Level 1",
+      issuer: "KPC (Korea Productivity Center)",
+      date: "Issued: 2024",
+      // certificateURL: "",
+    },
+  ],
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -498,6 +517,7 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
+  certifications,
   techStack,
   workExperiences,
   openSource,
