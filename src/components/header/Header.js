@@ -1,4 +1,5 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -14,7 +15,9 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
+  const { language, toggleLanguage } = useContext(LanguageContext); // ✅ 여기로 이동
+
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -26,18 +29,27 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
+          <span className="grey-color">&lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
+
+        {/* 🌐 언어 전환 버튼 */}
+        <button onClick={toggleLanguage} className="lang-btn">
+          {language === "en" ? "KR" : "EN"}
+        </button>
+
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+          <span
+            className={isDark ? "navicon navicon-dark" : "navicon"}
+          ></span>
         </label>
+
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
@@ -73,7 +85,6 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
               <ToggleSwitch />
             </a>
@@ -83,4 +94,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;
