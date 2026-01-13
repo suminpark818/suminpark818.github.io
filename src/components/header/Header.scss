@@ -12,6 +12,23 @@
   color: $textColorDark;
 }
 
+.lang-btn {
+  background: transparent;
+  border: 1px solid $subTitle;
+  color: $textColor;
+}
+
+.dark-menu .lang-btn {
+  color: white;
+  border-color: white;
+}
+
+
+.dark-menu .lang-btn {
+  color: white;
+  border-color: white;
+}
+
 .dark-menu li a {
   color: $textColorDark !important;
 }
